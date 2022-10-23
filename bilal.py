@@ -684,4 +684,4 @@ def dupcutter():
     
     
     
-bilal()
+sarfraz()
